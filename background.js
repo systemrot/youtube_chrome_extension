@@ -31,7 +31,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         chrome.tabs
           .sendMessage(tab.id, { action: "showPageNotification" })
           .catch((error) => {
-            // ignore the case where the content script is not injected
+            // works fine, so ignore the case where the content script is not injected
           });
       }
     });
